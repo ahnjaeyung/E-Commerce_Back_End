@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
         {
           model: Product,
           attributes: ['product_name', 'price', 'stock', 'category_id']
-        }
+        },
       ]
     });
     res.status(200).json(tagData);
